@@ -1,0 +1,4 @@
+tensorflow==2.12.0  # Or another version compatible with your model
+opencv-python-headless  # Required for OpenCV functions in a server environment
+numpy
+streamlit
