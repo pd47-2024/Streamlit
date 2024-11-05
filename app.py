@@ -1,7 +1,13 @@
+import streamlit as st
+import numpy as np
+import cv2
 from tensorflow.keras.models import load_model
 
 # Load the trained model
 model = load_model("angle_classification_model.h5")
+
+# Define your class labels (assuming you have these defined somewhere in the script)
+class_labels = ["15-18deg", "27-30deg"]
 
 # Prediction function
 def predict_image(image):
